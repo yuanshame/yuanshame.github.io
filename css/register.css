@@ -1,0 +1,173 @@
+.settleTop {
+  width: 100%;
+  height: 110px;
+  border-bottom: none;
+}
+
+.settleTop .settleTop-main {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.settleTop .settleTop-main .gologe {
+  float: left;
+}
+
+.settleTop .settleTop-main .stepCar {
+  float: right;
+  padding-top: 25px;
+}
+
+.regMain {
+  min-height: 600px;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.regMain .regLeft {
+  float: left;
+  width: 508px;
+  padding-top: 30px;
+}
+
+.regMain .regRight {
+  border: 1px solid #ccc;
+  border-top: #ea3918 2px solid;
+  width: 290px;
+  float: right;
+  margin-right: 80px;
+  margin-top: 30px;
+  padding: 20px 40px;
+}
+
+.regMain .regRight h3 {
+  float: left;
+  font-size: 22px;
+  color: #444;
+  position: relative;
+}
+
+.regMain .regRight .rg {
+  float: right;
+  display: block;
+  line-height: 24px;
+  width: 160px;
+  text-align: right;
+}
+
+.regMain .regRight .rg a {
+  color: #999;
+}
+
+.regMain .regRight .clear {
+  clear: both;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+
+.regMain .regRight #loginFrom {
+  margin-top: 20px;
+}
+
+.regMain .regRight #loginFrom li {
+  position: relative;
+}
+
+.regMain .regRight #loginFrom li .user0 {
+  position: absolute;
+  background: url(../img/t.png) no-repeat 0 -52px;
+  height: 32px;
+  width: 32px;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.regMain .regRight #loginFrom li input {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #dedede;
+  color: #999;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.regMain .regRight #loginFrom li .user {
+  padding-left: 8px;
+  width: 240px;
+}
+
+.regMain .regRight #loginFrom li p {
+  height: 24px;
+  color: #ff6b52;
+  line-height: 24px;
+}
+
+.regMain .regRight #loginFrom li .pass {
+  padding-left: 8px;
+  width: 240px;
+}
+
+.regMain .regRight #loginFrom li .code {
+  width: 100px;
+  padding-left: 8px;
+}
+
+.regMain .regRight #loginFrom li .phocode {
+  width: 100px;
+  padding-left: 8px;
+}
+
+.regMain .regRight #loginFrom li .huo {
+  width: 100px;
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  background: #eee;
+  border: 1px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 2px;
+  margin-left: 2px;
+}
+
+.regMain .regRight #loginFrom li .checkbox {
+  position: relative;
+  top: 3px;
+  height: 14px;
+  width: 14px;
+  line-height: 14px;
+}
+
+.regMain .regRight #loginFrom li i {
+  display: inline-block;
+  color: #999;
+  height: 30px;
+  line-height: 30px;
+  font-style: normal;
+}
+
+.regMain .regRight #loginFrom li span {
+  height: 30px;
+  line-height: 30px;
+}
+
+.regMain .regRight #loginFrom li a {
+  color: #999;
+}
+
+.regMain .regRight #loginFrom li .regbtn {
+  background-color: #e83917;
+  width: 290px;
+  margin-top: 5px;
+  color: #fff;
+  font-size: 22px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}

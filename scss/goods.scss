@@ -1,0 +1,119 @@
+.breadline{
+	color:#999;
+	line-height: 50px;
+	font-family: "宋体",SimSun;
+	a{
+		padding: 0 5px;
+		color: #666;
+	}
+}
+.shareW{
+	width: 1190px;
+	margin:  0 auto;
+}
+.productInfo{
+	background: #fff;
+	position: relative;
+	margin-bottom: 20px;
+	.spec-preview{
+		float: left;
+		width: 362px;
+		.jqzoom{
+			position: relative;
+			float: left;
+			padding: 0;
+			width: 350px;
+			height: 350px;
+			border: 1px solid #ccc;
+			.filter{
+				display: none;
+				height: 175px;
+				width: 175px;
+				background: rgb(205,201,167);
+				position: absolute;
+				opacity: 0.5;
+				top: 0;
+				left: 0;
+			}
+			.bigbox{
+				display: none;
+				position: absolute;
+				z-index: 45;
+				top: -1px;
+				left: 360px;
+				border: 1px solid #ccc;
+				height: 400px;
+				width: 400px;
+				overflow: hidden;
+				img{
+					position: absolute;
+					left: 0;
+					top: 0;
+					height: 800px;
+					width: 800px;
+				}
+			}
+
+			img{
+				width: 350px;
+				height: 350px;
+			}
+		}
+  
+	    .spec-scroll{
+	    	float: left;
+	    	width: 354px;
+	    	height: 56px;
+	    	padding-top: 6px;
+	    	.prev{
+	    		float: left;
+	    		width: 18px;
+	    		height: 54px;
+	    		display: block;
+	    		background: url(../img/main.png) no-repeat -142px -116px;
+	    	}
+	    	.next{
+	    		float: right;
+	    		width: 18px;
+	    		height: 54px;
+	    		display: block;
+	    		background: url(../img/main.png) no-repeat -167px -116px;
+	    	}
+	    	.items{
+	    		position: relative;
+	    		width: 302px;
+	    		height: 59px;
+	    		margin-right: 8px;
+	    		margin-left: 8px;
+	    		float: left; 
+	    		overflow: hidden;
+	    		.list-h{
+	    			position: absolute;
+	    			z-index: 45;
+	    			left: 0;
+	    			top: 0;
+	    			width: 720px;
+	    	
+	    			li{
+	    				float: left;
+	    				margin-right: 0;
+	    				width: 61px;
+	    				img{
+	    					padding: 2px;
+	    					border: 1px solid #ccc;
+	    					width: 50px;
+	    					height: 50px;
+	    					
+	    				}
+	    				.active{
+	    					padding: 1px;
+	    					border: 2px solid red;
+	    				}
+	    			}
+
+	    		}
+	    	}
+	    } 
+
+     }
+}

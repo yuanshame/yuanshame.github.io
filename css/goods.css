@@ -1,0 +1,131 @@
+@charset "UTF-8";
+.breadline {
+  color: #999;
+  line-height: 50px;
+  font-family: "宋体",SimSun;
+}
+
+.breadline a {
+  padding: 0 5px;
+  color: #666;
+}
+
+.shareW {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.productInfo {
+  background: #fff;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.productInfo .spec-preview {
+  float: left;
+  width: 362px;
+}
+
+.productInfo .spec-preview .jqzoom {
+  position: relative;
+  float: left;
+  padding: 0;
+  width: 350px;
+  height: 350px;
+  border: 1px solid #ccc;
+}
+
+.productInfo .spec-preview .jqzoom .filter {
+  display: none;
+  height: 175px;
+  width: 175px;
+  background: #cdc9a7;
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+}
+
+.productInfo .spec-preview .jqzoom .bigbox {
+  display: none;
+  position: absolute;
+  z-index: 45;
+  top: -1px;
+  left: 360px;
+  border: 1px solid #ccc;
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.productInfo .spec-preview .jqzoom .bigbox img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 800px;
+  width: 800px;
+}
+
+.productInfo .spec-preview .jqzoom img {
+  width: 350px;
+  height: 350px;
+}
+
+.productInfo .spec-preview .spec-scroll {
+  float: left;
+  width: 354px;
+  height: 56px;
+  padding-top: 6px;
+}
+
+.productInfo .spec-preview .spec-scroll .prev {
+  float: left;
+  width: 18px;
+  height: 54px;
+  display: block;
+  background: url(../img/main.png) no-repeat -142px -116px;
+}
+
+.productInfo .spec-preview .spec-scroll .next {
+  float: right;
+  width: 18px;
+  height: 54px;
+  display: block;
+  background: url(../img/main.png) no-repeat -167px -116px;
+}
+
+.productInfo .spec-preview .spec-scroll .items {
+  position: relative;
+  width: 302px;
+  height: 59px;
+  margin-right: 8px;
+  margin-left: 8px;
+  float: left;
+  overflow: hidden;
+}
+
+.productInfo .spec-preview .spec-scroll .items .list-h {
+  position: absolute;
+  z-index: 45;
+  left: 0;
+  top: 0;
+  width: 720px;
+}
+
+.productInfo .spec-preview .spec-scroll .items .list-h li {
+  float: left;
+  margin-right: 0;
+  width: 61px;
+}
+
+.productInfo .spec-preview .spec-scroll .items .list-h li img {
+  padding: 2px;
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 50px;
+}
+
+.productInfo .spec-preview .spec-scroll .items .list-h li .active {
+  padding: 1px;
+  border: 2px solid red;
+}

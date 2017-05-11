@@ -1,0 +1,175 @@
+﻿@charset "utf-8";
+/*悬浮购物车*/
+/*cart box*/
+.gou-cart a,.gou-cart p,.gou-cart li,.gou-cart div,.gou-cart h3{ font-family: "microsoft yahei"; text-decoration: none;}
+.gou-cart{z-index:201;  position:fixed; right:-280px; bottom:0; width:315px; height:100%; _position:fixed;_bottom:auto;_top:expression(documentElement.scrollTop+documentElement.clientHeight-this.offsetHeight-10);}
+.gou-cart .whole{ height:100%; position: relative;}
+.gou-cart .whole .bearImg{ width: 55px; height: 75px; position:absolute; top:5px; left:-12px; z-index: 20; background-size: 100%;}
+.gou-cart .whole .bearImg img{ width: 75%;}
+/*left*/
+.cart-nav{z-index:2; position:absolute; top:0; right:280; width:35px; height:100%; font-family:'microsoft yahei',arial; background:#444851;}
+.cart-nav-list{z-index:2; position:absolute; top:38%; left:0; width:35px; margin-top:-190px; *margin-top:-220px; background:#444851; }
+.cart-nav-list.bot{top:auto; bottom:0px;}
+.cart-nav-list li{ position: relative;}
+.cart-nav-list a{z-index:1; position:relative; top:0; left:0px;  display:block; line-height:200px; width:35px;*width:34px; height:30px; margin:5px 0; padding:0; text-decoration:none; color:#d8d8d8; font-size:12px; background-color:#444851; overflow:hidden;  }
+.cart-nav-list li.kf a{margin-bottom: 0; padding-bottom: 0; *float:left; margin-top: -5px;}
+.cart-nav-list li.kf div.span{color: #fff; text-align: center; padding-bottom:5px; margin-top: 0px;}
+.cart-nav-list li.kf:hover div.span,.cart-nav-list li.kf:hover a.aStair{ background: #ca3619;}
+.cart-nav-list li.kf.open div.span,.cart-nav-list li.kf.open a.aStair{ background: #ca3619;}
+.cart-nav-list a.act{ height:auto; line-height:16px; margin:25px 0 5px;*margin:60px 0 3px; color:#fff;}
+.cart-nav-list a.act div.span{ color: #fff;  width: 28px; height: auto;margin: 10px 0 10px 5px; word-break: break-all;}
+.cart-nav-list #backTop a{ margin:0px;}
+.cart-nav-list a.aStair:hover,.cart-nav .cart-nav-list a.aStair.on{ background: #ca3619;}
+.cart-nav-list li.kf:hover a.aStair i.servi,.cart-nav-list li.kf.open a.aStair i.servi{background-position: -3px -425px; cursor: default;}
+.cart-nav-list li i.wxi{background: url(../images/wxIcon_white.png) no-repeat center;}
+.cart-nav-list a i{ display: block; position: absolute; left:0px; top: 0px; width: 35px; height: 30px;}
+/*car*/
+.cart-nav-list a.message_list{ height:133px; line-height:16px; margin:5px 0 5px;*margin:3px 0 5px; color:#fff; }
+.cart-nav-list a.message_list .span{display:block; width:16px; height:48px; margin:38px 0 0 12px; *padding:38px 0 0 0px; cursor:pointer; color:#fff}
+.cart-nav-list a.message_list .cart_num{display:block; width:21px; height:21px;  margin:9px 0 0 7px; text-align:center; line-height:21px; background:#ca3619;  border-radius:50%; cursor:pointer; color:#fff;}
+/*icon*/
+.cart-nav-list i{ background: url(../images/icon_index.png?v=20160112) no-repeat;}
+.cart-nav-list i.account{background-position: -2px -90px;/*账号图标*/}
+.cart-nav-list i.message{background-position: -3px -139px;/*购物车图标*/}
+.cart-nav-list i.view{ background-position: -3px -278px;/*历史图标*/}
+.cart-nav-list i.servi{ background-position: -2px -191px; cursor: default; /*客服*/}
+.cart-nav-list i.collection{ background-position: -2px -233px;/*收藏图标*/}
+.cart-nav-list i.payto{ background-position: -2px -314px; cursor: default; /*二维码*/}
+.cart-nav-list i.feedicon{ background-position: -2px -350px;/*反馈*/}
+.cart-nav-list i.backTop{ background-position: -2px -390px;}
+.cart-nav-list i.backTop img{ position: absolute; left: 3px; top: 2px; opacity: 0;filter:alpha(opacity=0); }
+/*icon hover main*/
+.cart-nav-list .module-pro{ position: absolute; left: 0; top: -50px; width:0px; overflow: hidden;}
+.cart-nav-list .txt-pro{ position: absolute;  left: 0px;width:0px ; overflow: hidden;white-space:nowrap; line-height: 30px; text-align: center; font-size: 12px; color: #fff;  background: #444851; }
+.cart-nav-list .txt-pro a{  display: inline; height:100%; padding: 0px; margin: 0px; line-height:30px ;color: #fff; }
+/*微信样式*/
+.cart-nav-list .module-pro .cartwx{ width: 240px; background: #fff; padding:4px 0;}
+.cart-nav-list .module-pro .cartwx dl { overflow: hidden;}
+.cart-nav-list .txt-pro .tactusImg{position: relative; }
+.cart-nav-list .txt-pro .lotxt{position: absolute;left: 37%; top: 55%; width:20%; height:10%;}
+.cart-nav-list .txt-pro .tactuslogin{position:relative; position:absolute; left: 18%; top: 55%; width:50%; height:10%; background:url(../images/icon_index.png?v=20160112) no-repeat -10000px 0; filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#0ffffff0', EndColorStr='#0ffffff0'); color: #999; text-align: left;}
+.cart-nav-list .txt-pro .tactuslogin .e1{position: absolute; top:50%;height: 24px; line-height:24px; margin-top:-12px;}
+.cart-nav-list .txt-pro .tactuslogin .e2{position: absolute; display: block; width:55px; margin-left:0; top:50%; left:55px; font-size: 12px; height: 24px; line-height: 24px; margin-top:-12px; text-align: center; background: #a2e65b; border-radius:4px;color: #fff;}
+.cart-nav-list .txt-pro .tactuslogin .e2:hover{background: #90dd40;}
+.cart-nav-list .txt-pro .tactusImg img{display: block; }
+.cart-nav-list .txt-pro .tactusImg .beforeTit{ display: block; position:relative; position:absolute; left: 0px; top:0; height: 16.7%; width:100%;}
+.cart-nav-list .txt-pro .tactusImg .beforeTit em{position:absolute; display: block; left: 0px; top:50%; margin-top:-7px; height: 15px; line-height:15px;   width:100%; text-align: center; font-size: 15px; color: #fff;font-weight: bold;}
+.cart-nav-list .txt-pro .tactusImg .beforeTip{position: absolute; display: block; left:19%; top:24%; height:22%; width:70%; color: #333; font-size: 12px;white-space:normal; line-height: 16px; text-align: left;  }
+.cart-nav-list .txt-pro .tactusImg .afterTip{position: absolute; display: block; left:20%; top:15%; height:22%; width:70%; color: #333; font-size: 12px;white-space:normal; line-height: 16px; text-align: left; }
+.cart-nav-list .txt-pro .tactusImg .afterTip em,.cart-nav-list .txt-pro .tactusImg .beforeTip em{position:absolute; display: block; left: 0px; top:50%; margin-top:-18px; *margin-top:-24px; height:36px; line-height:18px;   width:100%; text-align: left; font-size: 14px; color: #333; overflow: hidden;font-weight: bold;}
+.cart-nav-list .txt-pro .tactusImg .i2{position: absolute; left:20%; top:41%; width:35%; height:33%; *top:38.5%; *height: 31.5%;}
+.cart-nav-list .txt-pro .tactusImg .headIco{position: absolute; left:3%; width:11%; height:10.5%;}
+.cart-nav-list .txt-pro .tactusImg .i3_1{top:18.5%; *top:17%; }
+.cart-nav-list .txt-pro .tactusImg .i3_2{top:38%; *top:36%;}
+.cart-nav-list .txt-pro .tactusImg .afterTit{ display: block; position:relative; position:absolute; left: 0px; top:0; height: 13%; width:100%;}
+.cart-nav-list .txt-pro .tactusImg .afterTit em{position:absolute; display: block; left: 0px; top:50%; margin-top:-7px; *margin-top:-9px; height: 15px; line-height:15px;   width:100%; text-align: center; font-size: 15px; color: #fff;}
+
+@media only screen and (min-width:0px) and (max-width:1500px) {
+	.cart-nav-list .txt-pro .tactusImg .beforeTip em{font-size:12px; }
+	.cart-nav-list .txt-pro .tactuslogin .e2,.cart-nav-list .txt-pro .tactuslogin .e1{height: 18px; line-height: 18px; margin-top:-9px;width:44px;}
+	.cart-nav-list .txt-pro .tactusImg .afterTip em{font-size: 12px;}
+}
+.cart-nav-list .txt-pro .closeThis{display: block; position: absolute; right:0px; top: 0px; width:14%; height:16%; background-position:-10000px 0; background:rgba(255,255,255,0); filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#0ffffff0', EndColorStr='#0ffffff0'); cursor: pointer; z-index: 20;}
+.cart-nav-list .txt-pro .tactus{ width:255px; overflow: hidden;  padding: 0px 0 5px 10px; background: #444851; text-align: center;*clear: both; *float: left;}
+.cart-nav-list .txt-pro .tactus p{height: 28px; padding:5px 0 3px 0; width: 100px; margin: 0; line-height: 28px;font-size: 15px; color: #fff;}
+.cart-nav-list .txt-pro .tactus a{ display:block; width:170px; height: 28px; margin: 0; line-height: 28px;   font-size: 14px; background: #444851 url(../images/icon_index.png) no-repeat scroll -568px -20px ; padding-left: 10px; padding-top:6px; }
+.cart-nav-list .txt-pro .tactus a:hover{color:#fff;}
+.cart-nav-list .txt-pro .tactus :last-child{ border-bottom:none;}
+/*.cart-nav-list .module-pro .cartwx dl dd a{ background: url(../images/icon_index.png) no-repeat;}
+.cart-nav-list .module-pro .cartwx dl dd a.ipho:hover,.cart-nav-list .module-pro .cartwx dl dd a.ipho{ background-position: -293px -42px;}
+.cart-nav-list .module-pro .cartwx dl dd a.andr:hover,.cart-nav-list .module-pro .cartwx dl dd a.andr{ background-position: -258px -43px;}*/
+/*right*/
+.cart-main-list{position:absolute; right: 0px; top: 0; width: 280px; height: 100%; background: #6A5A51; }
+/*login*/
+.sideLogin{ background:#ddd; height: 100%; overflow: hidden;}
+.sideLogin .nologin,.sideLogin .onlogin{ width: 200px; margin:0 auto; position: relative;}
+.sideLogin .nologin{height: 220px;  margin-top:100px;}
+.sideLogin .nologin input[type=text],.sideLogin .nologin input[type=password]{ color: #999;  width:153px; box-shadow:0 0 3px #ccc; border: 1px solid #fff; border-radius: 3px; background: #fff; height:30px; line-height: 30px !important; line-height: auto; padding:0 10px 0 35px; margin-bottom: 25px; font-size:15px;font-family: "microsoft yahei";}
+.sideLogin .nologin input[type=text]:focus{ color: #333;}
+.sideLogin .nologin input[type=button],.sideLogin .nologin input[type=submit]{ background: #ca3619; width: 100px;height: 30px; line-height: 28px; color: #fff; margin-right: 10px; border: none; font-size: 15px; font-family: "microsoft yahei"; cursor:pointer;}
+.sideLogin .nologin p{ font-size: 14px; line-height: 30px;}
+.sideLogin .nologin p { font-size: 12px;}
+.sideLogin .nologin div{ position:absolute; left:0px; color: #cb351a; }
+.sideLogin .nologin label.usebg{ position: absolute; width: 32px; height: 32px; background:url(../images/icon_index.png) no-repeat scroll -378px -45px;}
+.sideLogin .nologin label.wordbg{ position: absolute; width: 32px; height: 32px; background:url(../images/icon_index.png) no-repeat scroll -336px -45px;  left: 0px; top: 57px;}
+.sideLogin .nologin div.useTxt{top:36px; }
+.sideLogin .nologin div.pwdTxt{top:94px;}
+.sideLogin .nologin .yzm{ position: relative; overflow: hidden; height: 53px;}
+.sideLogin .nologin .yzm input{ width: 50px; height: 26px; line-height: 26px !important; float:left; padding-left:10px; }
+.sideLogin .nologin .yzm img{ width: 60px; height: 28px; margin-left: 5px; float:left;}
+.sideLogin .nologin .yzm a{ font-size:12px; margin-left: 5px; float:left;}
+.sideLogin .nologin div.yzmTxt{ top:148px;}
+/*.sideLogin .nologin p.red{ color: #eb6856; position: absolute; }
+.sideLogin .nologin p.useN{left: 0px; top: 35px; font-size: 12px; }
+.sideLogin .nologin p.paw{ color: #eb6856; position: absolute; }*/
+
+.sideLogin .onlogin{ font-family: "microsoft yahei"; height: 234px;position: relative; top: 50%;  margin-top:-220px;}
+.sideLogin .onlogin h3{ height: 40px; font-size: 18px;}
+.sideLogin .onlogin div.headImg{ width:75px; height: 75px; margin: 0 auto; background: red;}
+.sideLogin .onlogin div.headImg img{ width:75px; height: 75px;}
+.sideLogin .onlogin div.loginName{ text-align: center; font-size: 14px; line-height: 40px;}
+.sideLogin .onlogin div.uselv{ text-align: center; font-size: 14px;}
+.sideLogin .onlogin div.uselv i{ padding:1px 7px;font-size: 13px; font-style: normal; background: #ca3619; color: #fff; margin-right: 5px;}
+.sideLogin .onlogin a.useCn{ display: block; width: 130px; height: 32px; margin: 30px auto 0;  color: #fff; background: #ca3619; text-align: center; line-height: 32px; font-size: 14px; }
+/*shoping car content*/
+.cart-main-list .shopcar{position: relative; background: #ddd;  height: 100%; font-family: "microsoft yahei";}
+.shopcar .gou-moTop{ height: 30px; line-height: 30px; padding:0 10px; background: #eee;}
+.shopcar .gou-moTop .gou-chk{ float: left; margin-right: 5px;}
+.shopcar .gou-moTop .gou-chk input{ vertical-align: middle;}
+.shopcar .gou-moTop label{ float: left;}
+.shopcar .gou-moTop a{ float: right; color: #333;}
+.shopcar .cart-order-main{ padding:0 0px; height: 100%; overflow: hidden;}
+.cart-order-main h3.sendgod{ line-height: 30px; padding:0 10px; font-size: 13px; }
+.cart-order-main h3.sendgod span{ padding:3px 10px; height: 18px; line-height: 18px; border-radius: 4px; background: #f26b67; margin:3px 0 0 5px; color: #fff; float: right;font-family: "microsoft yahei";}
+/*.cart-order-main .onsale{ height: 30px; padding:0 10px; line-height: 30px; border-bottom:1px solid #e1e1e1;border-top:1px solid #e1e1e1; background: #f2f2f2; }
+.cart-order-main .onsale span{ padding:3px 10px; border-radius: 4px; background: #f95e5e; margin-right: 5px; color: #fff;}*/
+.cart-order-list {  width: 100%;overflow-x:hidden; padding:0px 12px 0 0px; overflow-y: auto;}
+.cart-order-list .gouOrder{ overflow: hidden; clear: both;  position: relative; zoom: 1; padding:5px 10px; border-bottom:1px dashed #e1e1e1; background: #f2f2f2;}
+.cart-order-list .gouOrder.last{border-bottom:none; margin-bottom:10px;}
+.cart-order-list .gouOrder div{ float: left; overflow: hidden; }
+.cart-order-list .cartChk{ width: 32px; text-align: center; padding-top: 20px;}
+.cart-order-list .cartItem img{ width: 50px; height: 50px; border: 1px solid #ccc;}
+.cart-order-list .proInfo{ width: 190px;}
+.cart-order-list .proInfo h3.name{ height: 36px; width: 185px; overflow: hidden;  line-height: 18px; margin-left:10px;}
+.cart-order-list .proInfo h3.name span.red{ color: #e02200;}
+.cart-order-list .proInfo p.price_count{ text-align: right; font-weight: bold;}
+/*.cart-order-list .cartAcount{ width:135px; text-align: center;}
+.cart-order-list .cartAcount span,.cart-order-list .cartCost span{padding: 19px 4px 0 4px; display: inline-block;}*/
+.cart-bills{ padding: 0 8px; height: 50px; position: absolute; width: 264px; bottom:0px; background: #ccc;  }
+.cart-bills p{ float:left; height: 36px; padding-top: 8px; width: 110px;}
+.cart-bills p span{ line-height: 18px;  display: block;}
+.cart-bills p span.price{ color: #ca3619; font-weight: bold;}
+.cart-bills .goubill{ height: 32px; margin-top:10px; line-height: 32px; cursor: pointer; width:145px;  float:right; background: #cc1d00; text-align: center;}
+.cart-bills .goubill .cartBtn{color: #fff; margin:0 auto; font-size: 14px; font-weight: bold; text-align: center; line-height: 30px;}
+/*history content*/
+.cart-history,
+.collect,
+.active{position: relative; height: 100%; background: #ddd; font-family: "microsoft yahei"; }
+.cart-history h3,
+.collect h3,
+.active h3{ font-size: 15px; padding:15px 15px 8px 15px;}
+.cart-history h3 a.refresh,
+.collect h3 a.refresh,
+.active h3 a.refresh{ float:right; font-size: 13px;}
+.cart-history h3 a.refresh i,
+.collect h3 a.refresh i,
+.active h3 a.refresh i{ display: block; float:left; margin: 2px 4px 0 0; width: 16px; height: 14px; background:url(../images/icon_index.png) no-repeat scroll -213px -2px;}
+.public-list,.nopublic{ height:100%; width: 100%; background: #ddd; overflow: hidden;}
+.nopublic .nothing{ position: relative; top: 40%; height: 250px;  width: 220px; margin:-220px auto 0; color: #999; font-size: 14px; text-align: center; font-family: "microsoft yahei";}
+.nopublic .nothing a{ font-size: 16px; line-height: 40px;}
+.nopublic .nothing .noicon{ background:url(../images/cartshop.png) no-repeat center center; width: 220px; height: 220px;}
+.public-list ul,.public-list ol {  width: 293px;height:100%;overflow-y:auto; overflow-x: hidden;}
+.public-list ul li{ width:117px; height: 122px; padding-top:8px; margin: 15px 0 0 15px; float:left; background: #fff; text-align: center;}
+.public-list ul li img{ width: 100px; height: 100px;}
+.public-list ul li p.price{ font-size: 14px; line-height:24px; color: #ca3619;}
+/* active*/
+.public-list .act{ padding-left: 12px; margin-bottom: 10px; width: 281px; }
+.public-list .act li{ margin-top: 10px;}
+.public-list .act li a.img img{ width: 255px; height: 120px;}
+.public-list .act li p.name{ text-align: center; height: 28px; overflow: hidden; line-height: 28px; font-size: 16px; color: #444;}
+.public-list ul li.moreAll{ background: none; width:100%; height: 50px; line-height: 30px;}
+/*fly cart*/
+.moveCar{ display: none; position: fixed; float: left; height: 30px; width: 30px; overflow: hidden; top .3s ease-out 0s;  border-radius: 15px; z-index: 120;}
+
+
+
